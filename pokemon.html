@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <link rel="shortcut icon" href="image.webp" type="image/x-icon">
+</head>
+<body>
+
+    <div class="background-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#72d408" fill-opacity="1" d="M0,256L80,224C160,192,320,128,480,128C640,128,800,192,960,224C1120,256,1280,256,1360,256L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </div>
+    
+    <h1>Pokemon Search</h1>
+    <div class="container">
+        <input type="text" class="pokemonName" placeholder="Enter Pokemon name" >
+        <button onclick="fetchData()">Fetch Pokemon</button>
+        <div class="suggestions"></div>
+    </div>
+    
+    <div class="pokemon-card">
+        <div class="card-placeholder">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="#45be09" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="50" stroke="#45be09" stroke-width="1.5" fill="none"/>
+                <path d="M60 30 L75 50 L60 70 L45 50 Z" fill="#45be09" opacity="0.5"/>
+                <circle cx="60" cy="60" r="8" fill="#10b981"/>
+            </svg>
+            <h2>Search for a Pokemon</h2>
+            <p>Enter a Pokemon name above to get started</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
