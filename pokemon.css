@@ -29,7 +29,7 @@ body {
 }
 @media (max-width: 740px) {
     .background-svg {
-        transform: scaleY(1.8); 
+        transform: scaleY(3); 
         transform-origin: top;
     }
     
