@@ -29,6 +29,7 @@ async function fetchData() {
     const data = await response.json();
 
     const imgUrl = data.sprites.front_default;
+    const backImg = data.sprites.back_default;
     const name = data.name.toUpperCase();
     const height = (data.height / 10).toFixed(1);
     const weight = (data.weight / 10).toFixed(1);
@@ -49,8 +50,11 @@ async function fetchData() {
         <h2 class="pokemon-name">${name}</h2>
         <p class="pokemon-id">#${String(id).padStart(3, '0')}</p>
 
-        <img class="pokemon-img" src="${imgUrl}" alt="${name}">
-
+        <div class="imgs">
+            <img class="pokemon-img" src="${imgUrl}" alt="${name}">
+            <img class="pokemon-img" src="${backImg}" alt="${name}">
+        </div>
+        
         <div class="types">
             ${typesHTML}
         </div>

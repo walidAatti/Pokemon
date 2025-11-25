@@ -29,7 +29,7 @@ body {
 }
 @media (max-width: 740px) {
     .background-svg {
-        transform: scaleY(1.8); 
+        transform: scaleY(3); 
         transform-origin: top;
     }
     
@@ -199,6 +199,12 @@ button:active {
     letter-spacing: 2px;
 }
 
+/* IMGS */
+.imgs {
+    display: flex;
+    gap: 5px;
+}
+
 .pokemon-img {
     width: 240px;
     height: 240px;
@@ -294,6 +300,11 @@ button:active {
         font-size: 36px;
     }
 
+    .imgs {
+        display: flex;
+        flex-direction: column;
+    }
+
     .container {
         padding: 30px 20px;
         margin-bottom: 30px;
@@ -310,6 +321,7 @@ button:active {
     .pokemon-img {
         width: 200px;
         height: 200px;
+        margin: 5px auto;
     }
 
     .size {
@@ -340,6 +352,8 @@ button:active {
     margin-bottom: 10px;
     font-weight: 700;
 }
+
+
 
 .card-placeholder p {
     font-size: 14px;
